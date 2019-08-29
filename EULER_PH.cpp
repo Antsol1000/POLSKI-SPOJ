@@ -11,7 +11,7 @@ LL eulerPhi(LL number) { // phi Euler  function
     where ab = n and gcd(a, b) = 1
     we use formula phi(prime^alhpa) = prime^alpha - prime^(alpha-1) */
 
-    if (number <= 3) // if number is 2 or 3 phi(number) = 2
+    if (number <= 2) // if number is 1 or 2 phi(number) = 1
         return 1;
     for (LL prime = 2; prime*prime <= number; prime++) {
         // for loop like in eratostenes
